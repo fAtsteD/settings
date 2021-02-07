@@ -1,0 +1,42 @@
+// Поместите настраиваемые сочетания клавиш в этот файл, чтобы перезаписать клавиши по умолчанию.
+[
+	{
+		"key": "ctrl+shift+s",
+		"command": "workbench.action.files.saveAll"
+	},
+	{
+		"key": "ctrl+k s",
+		"command": "-workbench.action.files.saveAll"
+	},
+	{
+		"key": "ctrl+shift+s",
+		"command": "-workbench.action.files.saveAs"
+	},
+	{
+		"key": "tab",
+		"command": "-acceptSelectedSuggestion",
+		"when": "editorTextFocus && suggestWidgetVisible"
+	},
+	{
+		"key": "down",
+		"command": "selectNextSuggestion",
+		"when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+	},
+	{
+		"key": "tab",
+		"command": "selectNextSuggestion",
+		"when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+	},
+	{
+		"key": "ctrl+shift+down",
+		"command": "editor.emmet.action.balanceIn"
+	},
+	{
+		"key": "ctrl+shift+up",
+		"command": "editor.emmet.action.balanceOut"
+	},
+	{
+		"key": "shift+alt+.",
+		"command": "editor.emmet.action.wrapIndividualLinesWithAbbreviation"
+	}
+]
