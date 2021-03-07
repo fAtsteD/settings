@@ -12,7 +12,6 @@
     "editor.wordWrap": "on",
     "editor.renderWhitespace": "boundary",
     "editor.formatOnSave": true,
-    "editor.renameOnType": true,
     "editor.linkedEditing": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
@@ -37,13 +36,11 @@
         "**/.factorypath": true
     },
     // Extensions
-    "extensions.showRecommendationsOnlyOnDemand": true,
     "extensions.ignoreRecommendations": true,
     // Git
     "git.enableSmartCommit": true,
     "git.ignoreMissingGitWarning": true,
     // Terminal
-    "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
     "terminal.integrated.rendererType": "dom",
     // Workbench
     "workbench.iconTheme": "material-icon-theme",
@@ -142,8 +139,8 @@
         "lisp": "sbcl --script",
         "kit": "kitc --run",
         "v": "v run",
-        "sass": "sass --style=expanded \"$fullFileName\" \"$dir$fileNameWithoutExt.css\" && sass --style=compressed \"$fullFileName\" \"$dir$fileNameWithoutExt.min.css\"",
-        "scss": "sass --style=expanded \"$fullFileName\" \"$dir$fileNameWithoutExt.css\" && sass --style=compressed \"$fullFileName\" \"$dir$fileNameWithoutExt.min.css\"",
+        "sass": "sass --style=compressed \"$fullFileName\" \"$dir$fileNameWithoutExt.min.css\"",
+        "scss": "sass --style=compressed \"$fullFileName\" \"$dir$fileNameWithoutExt.min.css\"",
         "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
         "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",

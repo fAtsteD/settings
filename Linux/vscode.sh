@@ -1,7 +1,7 @@
 #!usr/bin/env bash
 
 # Install VS Code
-sudo apt install -y code
+sudo snap install --classic code
 
 # Install Extension
 extensions="../VS Code/vs-code-extensions.txt"

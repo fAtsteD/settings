@@ -4,6 +4,8 @@
 
 It has start up settings for OSs.
 
+Some commands do not have right command for install, for example, all commands with sudo, but some needs local user running.
+
 ## Linux
 
 Read README.md there.
