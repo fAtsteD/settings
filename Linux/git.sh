@@ -12,7 +12,11 @@ git config --global commit.gpgsign true
 git config --global gpg.program gpg
 # Store login, email, password for accessing to remote repositories
 git config --global credential.helper store
+# Autocorrection of last command. Wait 1 second before apply
+git config --global help.autocorrect 10
 # Aliass for fix last commit
 git config --global alias.fixlast "commit --all --amend --no-edit"
 # Aliass for short added/changes files
 git config --global alias.stsb "status -sb"
+# Aliasing for colorful branch graph
+git config --global alias.stsb "log --graph --abbrev-commit --decorate --all --format=format:\"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)\""
