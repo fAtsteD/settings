@@ -18,5 +18,7 @@ git config --global help.autocorrect 10
 git config --global alias.fixlast "commit --all --amend --no-edit"
 # Aliass for short added/changes files
 git config --global alias.stsb "status -sb"
-# Aliasing for colorful branch graph
+# Aliass for colorful branch graph
 git config --global alias.stsb "log --graph --abbrev-commit --decorate --all --format=format:\"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)\""
+# Aliass for last tag
+git config --global alias.lasttag "describe --tags $(git rev-list --tags --max-count=1)"
