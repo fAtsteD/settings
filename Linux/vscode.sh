@@ -11,5 +11,5 @@ do
 done < "$extensions"
 
 # Copy settings and keybindings
-cp "../VS Code/settings.json" "~/.config/setting.json"
-cp "../VS Code/keybindings.json" "~/.config/keybindings.json"
+cp "../VS Code/settings.json" "$HOME/.config/Code/User/settings.json"
+cp "../VS Code/keybindings.json" "$HOME/.config/Code/User/keybindings.json"
