@@ -20,3 +20,8 @@ Need install Chrome extension then from https://extensions.gnome.org/ install:
 Packages global for using:
 
 -   sass/scss
+
+## Ubuntu
+
+Set slideshow wallpaper through Shotwell (default Ubuntu viewer):
+https://linuxconfig.org/ubuntu-20-04-wallpaper-slideshow
