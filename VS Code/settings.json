@@ -41,16 +41,13 @@
     "git.enableSmartCommit": true,
     "git.ignoreMissingGitWarning": true,
     // Terminal
-    "terminal.integrated.rendererType": "dom",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
     // Workbench
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Tomorrow Night Eighties",
-    "workbench.editorAssociations": [
-        {
-            "viewType": "default",
-            "filenamePattern": "*.bas"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.bas": "default"
+    },
     "workbench.startupEditor": "welcomePageInEmptyWorkbench",
     "breadcrumbs.enabled": true,
     // TODO Highlights
