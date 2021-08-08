@@ -12,11 +12,22 @@ git config --global gpg.program gpg
 git config --global credential.helper store
 # Autocorrection of last command. Wait 1 second before apply
 git config --global help.autocorrect 10
+# Sorting tag by version default
+git config --global tag.sort -v:refname
+# Add home template folder
+git config --global init.templatedir "$HOME/.git_template"
 # Aliass for fix last commit
 git config --global alias.fixlast "commit --all --amend --no-edit"
 # Aliass for short added/changes files
 git config --global alias.stsb "status -sb"
 # Aliass for colorful branch graph
 git config --global alias.graph "log --graph --abbrev-commit --decorate --all --format=format:\"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)\""
-# Aliass for last tag
-git config --global alias.lasttag "describe --tags $(git rev-list --tags --max-count=1)"
+
+# Template for commit messages
+# If branch name of ticket, set name of branch in the begining of commit
+
+# Create folders
+mkdir -p "$HOME/.git_template/hooks"
+
+# Copy script
+cp ./git/prepare-commit-msg "$HOME/.git_template/hooks/prepare-commit-msg"
